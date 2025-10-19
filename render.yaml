@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: youtube-autostream
+    env: docker
+    buildCommand: ""
+    startCommand: ./start.sh
+    envVars:
+      - key: VIDEO_URL
+        sync: false
+      - key: STREAM_KEY
+        sync: false
